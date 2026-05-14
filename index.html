@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Lana!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            background-color: #faf5f5;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem 1rem;
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 4rem;
+            color: #d17a7a;
+            margin: 0;
+        }
+
+        .intro-text {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 1rem 2rem 3rem;
+            color: #555;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            width: 90%;
+            padding-bottom: 4rem;
+        }
+
+        .polaroid {
+            background: #fff;
+            padding: 15px 15px 25px 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .polaroid:nth-child(even) {
+            transform: rotate(3deg);
+        }
+
+        .polaroid:hover {
+            transform: scale(1.05) rotate(0deg);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            z-index: 10;
+        }
+
+        .polaroid img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 2px;
+            filter: contrast(1.05) brightness(1.02);
+        }
+
+        .caption {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: 15px;
+            color: #444;
+        }
+
+        .footer-message {
+            background-color: #fff;
+            padding: 3rem;
+            border-top: 3px solid #f0e6e6;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .message-box {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .message-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .sign-off {
+            font-family: 'Caveat', cursive;
+            font-size: 2.5rem;
+            color: #d17a7a;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Happy Birthday, Lana!</h1>
+        <p class="intro-text">Just a few of my favorite memories we've made together. Here's to you today.</p>
+    </header>
+
+    <div class="gallery">
+        <div class="polaroid">
+            <img src="corn_festival_funny.jpg" alt="Corn Festival">
+            <div class="caption">Getting lost in the woods and still laughing our asses off.</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="lana_holding_chicken.jpg" alt="Holding Chicken">
+            <div class="caption">You being the ultimate animal whisperer.</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="otw_to_canada.jpg" alt="Roadtrip to Canada">
+            <div class="caption">Backseat shenanigans on the long haul to Canada.</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="eating_canadianSubway_with_lana.jpg" alt="Canadian Subway">
+            <div class="caption">Because late-night Canadian Subway hits different.</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="fishing_with_lana.jpg" alt="Fishing">
+            <div class="caption">Kicking back by the water, even when they weren't biting.</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="lana_dinner_2023.jpg" alt="Dinner Date">
+            <div class="caption">Looking absolutely stunning across the table.</div>
+        </div>
+
+        <div class="polaroid">
+            <img src="lana_skilift.jpg" alt="Ski Lift">
+            <div class="caption">Freezing on the night lifts, but having the best time snowboarding.</div>
+        </div>
+    </div>
+
+    <div class="footer-message">
+        <div class="message-box">
+            <p>I know this weekend is crazy with my graduation and everything else going on, but I wanted to make sure we took a second to celebrate <strong>you</strong>.</p>
+            <p>You've been crushing it at the hospital this past year, and I couldn't be more proud of everything you do. Between navigating our crazy schedules and preparing for our next big adventure down in Austin, I'm just lucky I get to do it all with you.</p>
+            <p>Happy Birthday. Let's make this next year even better than the last.</p>
+            <div class="sign-off">Love you</div>
+        </div>
+    </div>
+
+</body>
+</html>
